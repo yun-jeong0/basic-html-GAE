@@ -10,6 +10,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.carousel {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+				height: 300px; /* Set a fixed height for the carousel */
+			}
+
+			.carousel-image {
+				display: none;
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Ensures the image covers the section while maintaining aspect ratio */
+			}
+
+			.carousel-image.active {
+				display: block;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -115,8 +134,10 @@
 
                                 <section>
                                     <h2>Advertisements</h2>
-                                    <div class="carousel">
-                                        <img src="images/ad3.png" alt="Ad 1" style="width:100%">
+                                    <div class="change img carousel">
+                                        <img src="images/ad1.jpeg" alt="Ad 1" class="carousel-image active" style="width:100%">
+                                        <img src="images/ad2.jpg" alt="Ad 2" class="carousel-image" style="width:100%">
+                                        <img src="images/ad3.png" alt="Ad 3" class="carousel-image" style="width:100%">
                                     </div>
                                 </section>
                                 
@@ -126,8 +147,8 @@
 								<section>
 									<h2>An assortment of pictures and text</h2>
 									<p>Duis neque nisi, dapibus sed mattis quis, rutrum et accumsan.
-									Suspendisse nibh. Suspendisse vitae magna eget odio amet mollis
-									justo facilisis quis. Sed sagittis mauris amet tellus gravida
+									Suspendisse nibh. Suspendisse vitae magna eget odio amet
+									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
 									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
 									sit amet consequat sed dolore.</p>
 									<ul class="big-image-list">
@@ -242,7 +263,8 @@
 									<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
 									Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
 									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
-									lorem ipsum dolor sit blandit.</p>
+									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
+									sit amet consequat sed dolore.</p>
 									<footer class="controls">
 										<a href="#" class="button">Oh, please continue ....</a>
 									</footer>
@@ -271,5 +293,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/modal.js"></script>
+			<script src="assets/js/carousel.js"></script>
 	</body>
 </html>
