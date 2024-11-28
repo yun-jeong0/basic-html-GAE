@@ -1,270 +1,285 @@
-<!DOCTYPE HTML>
-<!--
-	Minimaxing by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Demo HTML</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			.carousel {
-				position: relative;
-				width: 100%;
-				overflow: hidden;
-				height: 300px; /* Set a fixed height for the carousel */
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFlex Engineering Rubber Products</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: white;
+            color: #333;
+            width: 1024px;
+            height: 576px;
+            margin: 0 auto;
+            overflow-y: auto;
+        }
 
-			.carousel-image {
-				display: none;
-				width: 100%;
-				height: 100%;
-				object-fit: cover; /* Ensures the image covers the section while maintaining aspect ratio */
-			}
+        header, nav, main, footer {
+            width: 100%;
+        }
 
-			.carousel-image.active {
-				display: block;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="page-wrapper">
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
 
-								<header id="header">
-									<h1><a href="index.html" id="logo">Demo</a></h1>
-									<nav id="nav">
-										<a href="index.html" class="current-page-item">Homepage</a>
-										<a href="twocolumn1.html">category1</a>
-										<a href="twocolumn2.html">category2</a>
-										<a href="onecolumn.html">category3</a>
-										<a href="threecolumn.html">category4</a>
-									</nav>
-								</header>
+        img {
+            margin-right: 16px;
+        }
 
-							</div>
-						</div>
-					</div>
-				</div>
+        h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
 
-			<!-- Banner -->
-				<div id="banner-wrapper">
-					<div class="container">
+        p {
+            font-size: 0.875rem;
+        }
 
-						<div id="banner">
-							<h2 id="welcome-text">Hi welcome to my website</h2>
-							<span>there is some information about me scroll down to see more</span>
-						</div>
+        nav {
+            background-image: linear-gradient(to right, #333, #555);
+            color: white;
+            padding: 10px 0;
+        }
 
-					</div>
-				</div>
+        nav a {
+            padding: 12px 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-right: 1px solid #777;
+        }
 
-			<!-- Main -->
-				<div id="main">
-					<div class="container">
-						<div class="row main-row">
-							<div class="col-4 col-12-medium">
+        nav a:last-child {
+            border-right: none;
+        }
 
-								<section>
-									<h2>Welcome to Demopage!</h2>
-									<p>This is <strong>Demopage</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> and released for free by <a href="http://html5up.net">HTML5 UP</a>. It features
-									a simple, lightweight design, solid HTML5 and CSS3 code, and full responsive support for desktop, tablet, and small displays.</p>
-									<footer class="controls">
-										<a href="http://html5up.net" class="button">More cool designs ...</a>
-									</footer>
-								</section>
+        nav a:hover {
+            background-color: #666;
+        }
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+        .pr-4 {
+            padding-right: 16px;
+        }
 
-								<section>
-									<h2>Who work with?</h2>
-									<ul class="small-image-list">
-										<li>
-											<a href="#"><img src="images/html.png" alt="" class="left" /></a>
-											<h4>Jane Anderson</h4>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo facilisis amet quis.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/csslogo.png" alt="" class="left" /></a>
-											<h4>James Doe</h4>
-											<p>Vitae magna eget odio amet mollis justo facilisis amet quis. Sed sagittis consequat.</p>
-										</li>
-									</ul>
-								</section>
+        .mb-4 {
+            margin-bottom: 16px;
+        }
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+        .text-2xl {
+            font-size: 1.5rem;
+        }
 
-                                <section>
-                                    <h2>Advertisements</h2>
-                                    <div class="change img carousel">
-                                        <img src="images/ad1.jpeg" alt="Ad 1" class="carousel-image active" style="width:100%">
-                                        <img src="images/ad2.jpg" alt="Ad 2" class="carousel-image" style="width:100%">
-                                        <img src="images/ad3.png" alt="Ad 3" class="carousel-image" style="width:100%">
-                                    </div>
-                                </section>
-                                
-							</div>
-							<div class="col-6 col-12-medium">
+        .font-bold {
+            font-weight: bold;
+        }
+    </style>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/subscribe.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div>
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div>
+                    <h1>Engineering Tire</h1>
+                    <p>Exceeding Customer Expectations Since 1984</p>
+                </div>
+            </div>
+            <div>
+                <p>+44 (0)1777 712 400</p>
+                <select>
+                    <option>Select Country</option>
+					<option>United States</option>
+					<option>United Kingdom</option>
+					<option>Germany</option>
+					<option>France</option>
+					<option>Spain</option>
+					<option>Italy</option>
+					<option>Portugal</option>
+					<option>Sweden</option>
+                </select>
+            </div>
+        </div>
+    </header>
 
-								<section>
-									<h2>An assortment of pictures and text</h2>
-									<p>Duis neque nisi, dapibus sed mattis quis, rutrum et accumsan.
-									Suspendisse nibh. Suspendisse vitae magna eget odio amet
-									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
-									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
-									sit amet consequat sed dolore.</p>
-									<ul class="big-image-list">
-										<li>
-											<a href="#"><img src="images/new1.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/new2.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-										<li>
-											<a href="#"><img src="images/news3.jpg" alt="" class="left" /></a>
-											<h3>Magna Gravida Dolore</h3>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo
-											facilisis amet quis consectetur in, sollicitudin vitae justo. Cras
-											Maecenas eu arcu purus, phasellus fermentum elit.</p>
-										</li>
-									</ul>
-								</section>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="onecolumn.html">Products</a>
+            <a href="twocolumn1.html">Markets</a>
+            <a href="twocolumn2.html">Resources</a>
+            <a href="threecolumn.html">News & Events</a>
+            <a href="threecolumn.html">Case Studies</a>
+            <a href="threecolumn.html">About Us</a>
+            <a href="threecolumn.html">Contact Us</a>
+        </div>
+    </nav>
 
-							</div>
-							<div class="col-6 col-12-medium">
+    <main>
+        <div class="flex">
+            <div class="pr-4">
+                <img src="images/longad.jpg" alt="Main Image" class="mb-4" style="display: block; margin: 0 auto;">
+                <h2 id="headline"class="text-2xl font-bold mb-2" style="text-align: center;">Silicone sheets, rubber mouldings and much more</h2>
+                <p style="text-align: center;">Whether you are looking for silicone sheets, rubber mouldings, gaskets, extrusions, bellows, fabrications, rubber sheeting or adhesives including 'Vulcasil' sheets and sealants - J-Flex can help.</p>
+                <h3 class="text-xl font-bold" style="margin-bottom: 8px;">Why buy from J-Flex?</h3>
+                <p>J-Flex is renowned as the leading and helpful industrial rubber products supplier with good product knowledge and excellent customer service. We supply world-class quality items including rubber sheet and a wide array of fabrications made from premium grade materials and manufactured to strict tolerances that others can not or will not supply.</p>
+                <p>Having been in the rubber industry for over 30 years, we have plenty of experience too. Our components & materials are used for food, lifestyle, filtration, and more.</p>
+                <a href="https://www.costco.co.kr/tiresearch" style="color: blue; text-decoration: underline;">Test Capability for Industry Brochure - download here</a>
+                <div style="margin-top: 16px; padding: 16px; border-radius: 8px; border: 1px solid #555; background-color: #555;">
+                    <h3 style="color: white;">Bulletin Board</h3>
+                    <ul id="bulletinBoard" style="list-style-type: none; padding: 0;">
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">est porta rhoncus. Mauris sodales saed pharetr</a></li>
+                        <li style="padding: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="#" style="text-decoration: none; color: inherit;">Silicone sheets, rubber mouldings and much more</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="login-container" style="background-color: #e2e8f0; padding: 16px;">
+                    <h4 style="font-weight: bold; margin-bottom: 8px;">LOGIN</h4>
+                    <input type="id" placeholder="ID" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <input type="pw" placeholder="Password" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <button id="loginButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">login</button>
+                </div>
+                <div style="background-color: #e2e8f0; padding: 16px;">
+                    <h4 style="font-weight: bold; margin-bottom: 8px;">Subscribe to Newsletter</h4>
+                    <input type="text" placeholder="Name" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <input type="email" placeholder="Email" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <button id="subscribeButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">Subscribe</button>
+                </div>
+                <div style="margin-top: 16px; text-align: center;">
+                    <img src="images/ad1.jpeg" alt="Advertisement" style="width: 100%; max-height: 220px; object-fit: cover;">
+                </div>
+				<div style="margin-top: 16px; text-align: center;">
+                    <img src="images/ad2.jpg" alt="Advertisement" style="width: 100%; max-height: 300px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <div class="flex" style="margin-top: 32px;">
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/new1.jpg" alt="V-SIL" style="margin-bottom: 8px;">
+                <p>Value for money silicone sheeting</p>
+				<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
+					Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
+					mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
+					lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
+					sit amet consequat sed dolore</p>
+            </div>
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/new2.jpg" alt="Silicone Rubber" style="margin-bottom: 8px;">
+                <p>The Definitive Rubber</p>
+				<p>Aenean non massa sapien. In hac habitasse platea dictumst.
+					Maecenas sodales purus et nulla sodales aliquam. Aenean ac
+					porttitor metus. In hac habitasse platea dictumst. Phasellus
+					blandit turpis in leo scelerisque mollis. Nulla venenatis
+					ipsum nec est porta rhoncus. Mauris sodales saed pharetr</p>
+            </div>
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/news3.jpg" alt="SpeedyFlex" style="margin-bottom: 8px;">
+                <p>SpeedyFlex The Right Industrial Rubber</p>
+				<p>nisi nec consectetur. Cras elit magna, hendrerit nec
+					consectetur in, sollicitudin vitae justo. Cras amet aliquet
+					Aliquam ligula turpis, feugiat id fermentum malesuada,
+					rutrum eget turpis. Mauris sodales sed pharetra nisi nec
+					consectetur. Cras elit magna, hendrerit nec consectetur
+					in sollicitudin vitae.</p>
+            </div>
+        </div>
+    </main>
 
-								<article class="blog-post">
-									<h2>Just another blog post</h2>
-									<a class="comments" href="#">33 comments</a>
-									<a href="#"><img src="images/longad.jpg" alt="" class="top blog-post-image" /></a>
-									<h3>Magna Gravida Dolore</h3>
-									<p>Aenean non massa sapien. In hac habitasse platea dictumst.
-									Maecenas sodales purus et nulla sodales aliquam. Aenean ac
-									porttitor metus. In hac habitasse platea dictumst. Phasellus
-									blandit turpis in leo scelerisque mollis. Nulla venenatis
-									ipsum nec est porta rhoncus. Mauris sodales sed pharetra
-									nisi nec consectetur. Cras elit magna, hendrerit nec
-									consectetur in, sollicitudin vitae justo. Cras amet aliquet
-									Aliquam ligula turpis, feugiat id fermentum malesuada,
-									rutrum eget turpis. Mauris sodales sed pharetra nisi nec
-									consectetur. Cras elit magna, hendrerit nec consectetur
-									in sollicitudin vitae.</p>
-									<footer class="controls">
-										<a href="http://html5up.net" class="button">Continue Reading</a>
-									</footer>
-								</article>
+    <footer style="background-color: #4a5568; color: white; padding: 16px;">
+        <div class="container" style="text-align: center;">
+            <p>Contact us | Find us | JFlex Rubber Products</p>
+            <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginButton = document.querySelector('#loginButton');
+            const idInput = document.querySelector('input[placeholder="ID"]');
+            const pwInput = document.querySelector('input[placeholder="Password"]');
+            const loginContainer = document.querySelector('.login-container');
 
-							</div>
-						</div>
-					</div>
-				</div>
+            if (loginButton && idInput && pwInput && loginContainer) {
+                loginButton.addEventListener('click', function() {
+                    const id = idInput.value;
+                    const pw = pwInput.value;
+                    if (id === 'user' && pw === '1234') {
+                        alert('인증되셨습니다');
+                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
+<div style="background-color: blue; color: white; padding: 8px; border-radius: 4px; display: inline-block;">
+    <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
+</div>`;
+                    } else {
+                        alert('아이디 또는 비밀번호가 틀렸습니다');
+                    }
+                });
+            }
+        });
 
-			<!-- Footer -->
-				<div id="footer-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-                                <section>
-									<h2>How about a truckload of links?</h2>
-									<div>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Suspendisse varius ipsum</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Vitae magna sed dolore</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Suspendisse varius ipsum</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-small">
-												<ul class="link-list">
-													<li><a href="#">Quis accumsan lorem</a></li>
-													<li><a href="#">Sed neque nisi consequat</a></li>
-													<li><a href="#">Eget et amet consequat</a></li>
-													<li><a href="#">Dapibus sed mattis blandit</a></li>
-													<li><a href="#">Vitae magna sed dolore</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</section>
+		document.addEventListener('DOMContentLoaded', function() {
+   			const subscribeButton = document.querySelector('#subscribeButton');
+ 			const nameInput = document.querySelector('input[placeholder="Name"]');
+   			const emailInput = document.querySelector('input[placeholder="Email"]');
 
+    		if (subscribeButton && nameInput && emailInput) {
+      			  subscribeButton.addEventListener('click', function() {
+           		 const name = nameInput.value;
+          		  const email = emailInput.value;
+           		 if (name && email) {
+                const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
+                if (confirmation) {
+                    alert('감사합니다');
+                }
+            } else {
+                alert('이름과 이메일을 입력해 주시겠습니까?');
+            }
+        });
+    }
+});
 
-							</div>
-							<div class="col-4 col-12-medium">
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'images/longad.jpg',
+                'images/longad2.jpg', // Replace with actual image paths
+                'images/longad3.jpg'
+            ];
+            let currentIndex = 0;
+            const mainImage = document.querySelector('img[alt="Main Image"]');
 
-								<section>
-									<h2>Something of interest</h2>
-									<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
-									Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
-									mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
-									lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
-									sit amet consequat sed dolore.</p>
-									<footer class="controls">
-										<a href="#" class="button">Oh, please continue ....</a>
-									</footer>
-								</section>
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                mainImage.src = images[currentIndex];
+            }, 3000);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textElement = document.querySelector('#headline');
+            const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
+            let colorIndex = 0;
 
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12">
-
-								<div id="copyright">
-									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/modal.js"></script>
-			<script src="assets/js/carousel.js"></script>
-	</body>
+            setInterval(() => {
+                textElement.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 500);
+        });
+    </script>
+</body>
 </html>
