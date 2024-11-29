@@ -4,163 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JFlex Engineering Rubber Products</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: white;
+            color: #333;
+            width: 1024px;
+            height: 576px;
+            margin: 0 auto;
+            overflow-y: auto;
+        }
+
+        header, nav, main, footer {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-right: 16px;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+
+        nav {
+            background-image: linear-gradient(to right, #333, #555);
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav a {
+            padding: 12px 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-right: 1px solid #777;
+        }
+
+        nav a:last-child {
+            border-right: none;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .pr-4 {
+            padding-right: 16px;
+        }
+
+        .mb-4 {
+            margin-bottom: 16px;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <img src="images/logo.png" alt="Logo" class="w-40">
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
                 <div>
-                    <h1 class="font-bold">Engineering Tire</h1>
-                    <p class="text-gray-600 hidden md:block">Exceeding Customer Expectations Since 1984</p>
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div>
+                    <h1>Engineering Tire</h1>
+                    <p>Exceeding Customer Expectations Since 1984</p>
                 </div>
             </div>
-            <div class="flex items-center space-x-4">
-                <span class="text-indigo-600 font-medium">+44 (0)1777 712 400</span>
-                <select class="bg-white border rounded-lg px-3 py-1">
+            <div>
+                <p>+44 (0)1777 712 400</p>
+                <select>
                     <option>Select Country</option>
-                    <option>United States</option>
-                    <option>United Kingdom</option>
-                    <option>Germany</option>
-                    <option>France</option>
-                    <option>Spain</option>
-                    <option>Italy</option>
-                    <option>Portugal</option>
-                    <option>Sweden</option>
+					<option>United States</option>
+					<option>United Kingdom</option>
+					<option>Germany</option>
+					<option>France</option>
+					<option>Spain</option>
+					<option>Italy</option>
+					<option>Portugal</option>
+					<option>Sweden</option>
                 </select>
             </div>
         </div>
-    </header><!-- Navigation -->
-    <nav class="bg-indigo-600">
-        <div class="container mx-auto px-4">
-            <ul class="flex flex-wrap justify-center space-x-6 py-4">
-                <li><a href="index.html" class="text-white hover:text-gray-200">Home</a></li>
-                <li><a href="onecolumn.html" class="text-white hover:text-gray-200">Products</a></li>
-                <li><a href="twocolumn1.html" class="text-white hover:text-gray-200">Markets</a></li>
-                <li><a href="twocolumn2.html" class="text-white hover:text-gray-200">Resources</a></li>
-                <li><a href="threecolumn.html" class="text-white hover:text-gray-200">News & Events</a></li>
-                <li><a href="threecolumn.html" class="text-white hover:text-gray-200">Case Studies</a></li>
-                <li><a href="threecolumn.html" class="text-white hover:text-gray-200">About Us</a></li>
-                <li><a href="threecolumn.html" class="text-white hover:text-gray-200">Contact Us</a></li>
-            </ul>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="onecolumn.html">Products</a>
+            <a href="twocolumn1.html">Markets</a>
+            <a href="twocolumn2.html">Resources</a>
+            <a href="threecolumn.html">News & Events</a>
+            <a href="threecolumn.html">Case Studies</a>
+            <a href="threecolumn.html">About Us</a>
+            <a href="threecolumn.html">Contact Us</a>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Main Content Area -->
-            <div class="md:col-span-2">
-                <!-- Banner -->
-                <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-8 text-white mb-8">
-                    <div class="flex">
-                        <div style="width: 60%; padding: 16px;">
-                            <img src="images/longad0.jpg" alt="Main Image" class="w-full rounded-lg" id="mainImage">
-                        </div>
-                        <div style="width: 40%; padding: 16px;">
-                            <h2 class="text-2xl font-bold mb-4">7 cures for you case of the mondays</h2>
-                            <p>you can set the tone for the week if you power through the morning grogginess & resist the urge to hit snoosze</p>
-                            <p>you dont have to be an optimist to be happy</p>
-                            <p>older adults think better in the morning</p>
-                        </div>
-                    </div>
-                </div><!-- Article -->
-<div class="bg-white rounded-xl p-8 shadow-sm mb-8">
-    <h2 class="text-2xl font-bold mb-6" id="headline">Silicone sheets, rubber mouldings and much more</h2>
-    <p class="text-gray-600 mb-8">Whether you are looking for silicone sheets, rubber mouldings, gaskets, extrusions, bellows, fabrications, rubber sheeting or adhesives including 'Vulcasil' sheets and sealants - J-Flex can help.</p>
-    
-    <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-xl font-bold mb-4">Why buy from J-Flex?</h3>
-        <p class="text-gray-600 mb-4">J-Flex is renowned as the leading and helpful industrial rubber products supplier with good product knowledge and excellent customer service. We supply world-class quality items including rubber sheet and a wide array of fabrications made from premium grade materials and manufactured to strict tolerances that others can not or will not supply.</p>
-        <p class="text-gray-600 mb-4">Having been in the rubber industry for over 30 years, we have plenty of experience too. Our components & materials are used for food, lifestyle, filtration, and more.</p>
-        <a href="https://www.costco.co.kr/tiresearch" class="text-indigo-600 hover:underline">Test Capability for Industry Brochure - download here</a>
-    </div>
-
-    <div class="bg-gray-50 p-6 rounded-lg mt-6">
-        <h3 class="text-xl font-bold mb-4">Bulletin Board</h3>
-        <ul id="bulletinBoard" class="space-y-2">
-            <li class="bg-white p-3 rounded shadow"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE">industry for over 30 years, we have plenty of</a></li>
-            <li class="bg-white p-3 rounded shadow"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">rubber mouldings, gaskets, extrusions</a></li>
-            <li class="bg-white p-3 rounded shadow"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">dapibus sed mattis quis, rutrum accumsan sed</a></li>
-            <li class="bg-white p-3 rounded shadow"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">est porta rhoncus. Mauris sodales saed pharetr</a></li>
-            <li class="bg-white p-3 rounded shadow"><a href="#">Silicone sheets, rubber mouldings and much more</a></li>
-        </ul>
-    </div>
-</div>
-</div>
-
-<!-- Sidebar -->
-<div class="md:col-span-1">
-    <!-- Login Form -->
-    <div class="bg-white rounded-xl p-6 shadow-sm mb-6 login-container">
-        <h4 class="font-bold mb-4">LOGIN</h4>
-        <input type="text" placeholder="ID" class="w-full px-3 py-2 border rounded-lg mb-3">
-        <input type="password" placeholder="Password" class="w-full px-3 py-2 border rounded-lg mb-3">
-        <button id="loginButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">login</button>
-    </div>
-
-    <!-- Newsletter Signup -->
-    <div class="bg-white rounded-xl p-6 shadow-sm mb-6">
-        <h4 class="font-bold mb-4">Subscribe to Newsletter</h4>
-        <input type="text" placeholder="Name" class="w-full px-3 py-2 border rounded-lg mb-3">
-        <input type="email" placeholder="Email" class="w-full px-3 py-2 border rounded-lg mb-3">
-        <button id="subscribeButton" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">Subscribe</button>
-    </div><!-- Pricing Plans -->
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <h4 class="font-bold mb-4">Gopro</h4>
-                    <div class="space-y-4">
-                        <div class="border rounded-lg p-4">
-                            <h4 class="text-pink-500 font-bold">Neon</h4>
-                            <p class="text-gray-600">1GB for just $4.95/Month.</p>
-                            <a href="#" class="text-indigo-600 hover:underline">Learn More</a>
-                        </div>
-                        <div class="border rounded-lg p-4">
-                            <h4 class="text-orange-500 font-bold">Argon</h4>
-                            <p class="text-gray-600">10GB for just $10.75/Month.</p>
-                            <a href="#" class="text-indigo-600 hover:underline">Learn More</a>
-                        </div>
-                        <div class="border rounded-lg p-4">
-                            <h4 class="text-green-500 font-bold">Xenon</h4>
-                            <p class="text-gray-600">30GB for just $25.95/Month.</p>
-                            <a href="#" class="text-indigo-600 hover:underline">Learn More</a>
-                        </div>
-                    </div>
+    <main>
+        <div class="flex">
+            <div class="pr-4">
+                <img src="images/longad0.jpg" alt="Main Image" class="mb-4" style="display: block; margin: 0 auto;">
+                <h2 id="headline"class="text-2xl font-bold mb-2" style="text-align: center;">Silicone sheets, rubber mouldings and much more</h2>
+                <p style="text-align: center;">Whether you are looking for silicone sheets, rubber mouldings, gaskets, extrusions, bellows, fabrications, rubber sheeting or adhesives including 'Vulcasil' sheets and sealants - J-Flex can help.</p>
+                <h3 class="text-xl font-bold" style="margin-bottom: 8px;">Why buy from J-Flex?</h3>
+                <p>J-Flex is renowned as the leading and helpful industrial rubber products supplier with good product knowledge and excellent customer service. We supply world-class quality items including rubber sheet and a wide array of fabrications made from premium grade materials and manufactured to strict tolerances that others can not or will not supply.</p>
+                <p>Having been in the rubber industry for over 30 years, we have plenty of experience too. Our components & materials are used for food, lifestyle, filtration, and more.</p>
+                <a href="https://www.costco.co.kr/tiresearch" style="color: blue; text-decoration: underline;">Test Capability for Industry Brochure - download here</a>
+                <div style="margin-top: 16px; padding: 16px; border-radius: 8px; border: 1px solid white; background-color: #e2e8f0;">
+                    <h3 style="color: black;">Bulletin Board</h3>
+                    <ul id="bulletinBoard" style="list-style-type: none; padding: 0;">
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></li>
+                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">est porta rhoncus. Mauris sodales saed pharetr</a></li>
+                        <li style="padding: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="#" style="text-decoration: none; color: inherit;">Silicone sheets, rubber mouldings and much more</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+            <div>
+                <div class="login-container" style="background-color: #e2e8f0; padding: 16px; ">
+                    <h4 style="font-weight: bold; margin-bottom: 8px;">LOGIN</h4>
+                    <input type="id" placeholder="ID" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <input type="pw" placeholder="Password" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <button id="loginButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">login</button>
+                </div>
+                <div style="background-color: #e2e8f0; padding: 16px;">
+                    <h4 style="font-weight: bold; margin-bottom: 8px;">Subscribe to Newsletter</h4>
+                    <input type="text" placeholder="Name" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <input type="email" placeholder="Email" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
+                    <button id="subscribeButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">Subscribe</button>
+                </div>
+                
+                <div class="go-pro-container" style="background-color: #e2e8f0; padding: 16px; margin-top: 16px; border-radius: 8px;">
+                    <h4 style="font-weight: bold; margin-bottom: 15px;">Gopro</h4>
+                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
+                            <h4 style="color: #ff1493; margin-top: 2px;">Neon</h4>
+                            <p>1GB for just $4.95/Month.</p>
+                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
+                        </div>
+                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
+                            <h4 style="color: #ff8c00;margin-top: 2px;">Argon</h4>
+                            <p>10GB for just $10.75/Month.</p>
+                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
+                        </div>
+                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
+                            <h4 style="color: #32cd32;margin-top: 3px;">Xenon</h4>
+                            <p>30GB for just $25.95/Month.</p>
+                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
+                        </div>
 
-        <!-- Product Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div class="bg-white rounded-xl p-6 shadow-sm">
-                <img src="images/new11.jpg" alt="V-SIL" class="w-full rounded-lg mb-4">
-                <h4 class="font-bold mb-2">Value for money silicone sheeting</h4>
-                <p class="text-gray-600">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor sit amet consequat sed dolore</p>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm">
-                <img src="images/new22.jpg" alt="Silicone Rubber" class="w-full rounded-lg mb-4">
-                <h4 class="font-bold mb-2">The Definitive Rubber</h4>
-                <p class="text-gray-600">Aenean non massa sapien. In hac habitasse platea dictumst. Maecenas sodales purus et nulla sodales aliquam. Aenean ac porttitor metus. In hac habitasse platea dictumst. Phasellus blandit turpis in leo scelerisque mollis. Nulla venenatis ipsum nec est porta rhoncus. Mauris sodales saed pharetr</p>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm">
-                <img src="images/news33.jpg" alt="SpeedyFlex" class="w-full rounded-lg mb-4">
-                <h4 class="font-bold mb-2">SpeedyFlex The Right Industrial Rubber</h4>
-                <p class="text-gray-600">nisi nec consectetur. Cras elit magna, hendrerit nec consectetur in, sollicitudin vitae justo. Cras amet aliquet Aliquam ligula turpis, feugiat id fermentum malesuada, rutrum eget turpis. Mauris sodales sed pharetra nisi nec consectetur. Cras elit magna, hendrerit nec consectetur in sollicitudin vitae.</p>
+                </div>  
+
             </div>
         </div>
+        <div class="flex" style="margin-top: 32px;">
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/new11.jpg" alt="V-SIL" style="margin-bottom: 8px;">
+                <p>Value for money silicone sheeting</p>
+				<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
+					Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
+					mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
+					lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
+					sit amet consequat sed dolore</p>
+            </div>
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/new22.jpg" alt="Silicone Rubber" style="margin-bottom: 8px;">
+                <p>The Definitive Rubber</p>
+				<p>Aenean non massa sapien. In hac habitasse platea dictumst.
+					Maecenas sodales purus et nulla sodales aliquam. Aenean ac
+					porttitor metus. In hac habitasse platea dictumst. Phasellus
+					blandit turpis in leo scelerisque mollis. Nulla venenatis
+					ipsum nec est porta rhoncus. Mauris sodales saed pharetr</p>
+            </div>
+            <div style="width: 33.33%; padding: 16px;">
+                <img src="images/news33.jpg" alt="SpeedyFlex" style="margin-bottom: 8px;">
+                <p>SpeedyFlex The Right Industrial Rubber</p>
+				<p>nisi nec consectetur. Cras elit magna, hendrerit nec
+					consectetur in, sollicitudin vitae justo. Cras amet aliquet
+					Aliquam ligula turpis, feugiat id fermentum malesuada,
+					rutrum eget turpis. Mauris sodales sed pharetra nisi nec
+					consectetur. Cras elit magna, hendrerit nec consectetur
+					in sollicitudin vitae.</p>
+            </div>
+  
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
+    <footer style="background-color: #4a5568; color: white; padding: 16px;">
+        <div class="container" style="text-align: center;">
             <p>Contact us | Find us | JFlex Rubber Products</p>
             <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
         </div>
     </footer>
-
     <script>
-        // Login functionality
         document.addEventListener('DOMContentLoaded', function() {
             const loginButton = document.querySelector('#loginButton');
             const idInput = document.querySelector('input[placeholder="ID"]');
@@ -174,9 +236,9 @@
                     if (id === 'user' && pw === '1234') {
                         alert('인증되셨습니다');
                         loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
-                            <div class="bg-indigo-600 text-white p-2 rounded mt-2">
-                                <p class="text-sm">상담건수: 5 | 예약건수: 3</p>
-                            </div>`;
+<div style="background-color: blue; color: white; padding: 8px; border-radius: 4px; display: inline-block;">
+    <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
+</div>`;
                     } else {
                         alert('아이디 또는 비밀번호가 틀렸습니다');
                     }
@@ -184,37 +246,35 @@
             }
         });
 
-        // Newsletter subscription
-        document.addEventListener('DOMContentLoaded', function() {
-            const subscribeButton = document.querySelector('#subscribeButton');
-            const nameInput = document.querySelector('input[placeholder="Name"]');
-            const emailInput = document.querySelector('input[placeholder="Email"]');
+		document.addEventListener('DOMContentLoaded', function() {
+   			const subscribeButton = document.querySelector('#subscribeButton');
+ 			const nameInput = document.querySelector('input[placeholder="Name"]');
+   			const emailInput = document.querySelector('input[placeholder="Email"]');
 
-            if (subscribeButton && nameInput && emailInput) {
-                subscribeButton.addEventListener('click', function() {
-                    const name = nameInput.value;
-                    const email = emailInput.value;
-                    if (name && email) {
-                        const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
-                        if (confirmation) {
-                            alert('감사합니다');
-                        }
-                    } else {
-                        alert('이름과 이메일을 입력해 주시겠습니까?');
-                    }
-                });
+    		if (subscribeButton && nameInput && emailInput) {
+      			  subscribeButton.addEventListener('click', function() {
+           		 const name = nameInput.value;
+          		  const email = emailInput.value;
+           		 if (name && email) {
+                const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
+                if (confirmation) {
+                    alert('감사합니다');
+                }
+            } else {
+                alert('이름과 이메일을 입력해 주시겠습니까?');
             }
         });
+    }
+});
 
-        // Image rotation
         document.addEventListener('DOMContentLoaded', function() {
             const images = [
                 'images/longad0.jpg',
-                'images/longad2.jpg',
+                'images/longad2.jpg', // Replace with actual image paths
                 'images/longad3.jpg'
             ];
             let currentIndex = 0;
-            const mainImage = document.querySelector('#mainImage');
+            const mainImage = document.querySelector('img[alt="Main Image"]');
 
             setInterval(() => {
                 currentIndex = (currentIndex + 1) % images.length;
@@ -222,7 +282,59 @@
             }, 3000);
         });
 
-        // Color changing headline
+        document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    const modal = document.createElement('div');
+    const modalImg = document.createElement('img');
+    const closeBtn = document.createElement('span');
+
+    modal.style.display = 'none';
+    modal.style.position = 'fixed';
+    modal.style.zIndex = '1000';
+    modal.style.left = '0';
+    modal.style.top = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.overflow = 'auto';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+
+    modalImg.style.maxWidth = '90%';
+    modalImg.style.maxHeight = '90%';
+
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '10px';
+    closeBtn.style.right = '25px';
+    closeBtn.style.color = '#fff';
+    closeBtn.style.fontSize = '35px';
+    closeBtn.style.fontWeight = 'bold';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.innerHTML = '&times;';
+
+    modal.appendChild(modalImg);
+    modal.appendChild(closeBtn);
+    document.body.appendChild(modal);
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+    </script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const textElement = document.querySelector('#headline');
             const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
@@ -232,43 +344,6 @@
                 textElement.style.color = colors[colorIndex];
                 colorIndex = (colorIndex + 1) % colors.length;
             }, 500);
-        });
-
-        // Image modal
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('img');
-            const modal = document.createElement('div');
-            const modalImg = document.createElement('img');
-            const closeBtn = document.createElement('span');
-
-            modal.className = 'fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center';
-            modalImg.className = 'max-w-[90%] max-h-[90%]';
-            closeBtn.className = 'absolute top-4 right-4 text-white text-4xl font-bold cursor-pointer';
-            closeBtn.innerHTML = '&times;';
-
-            modal.appendChild(modalImg);
-            modal.appendChild(closeBtn);
-            document.body.appendChild(modal);
-
-            images.forEach(img => {
-                img.addEventListener('click', function() {
-                    modal.classList.remove('hidden');
-                    modal.classList.add('flex');
-                    modalImg.src = this.src;
-                });
-            });
-
-            closeBtn.addEventListener('click', function() {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            });
-
-            modal.addEventListener('click', function(event) {
-                if (event.target === modal) {
-                    modal.classList.add('hidden');
-                    modal.classList.remove('flex');
-                }
-            });
         });
     </script>
 </body>
