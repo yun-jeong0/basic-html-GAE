@@ -1,161 +1,432 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <title>마이샵 온라인 - 최고의 쇼핑을 즐기세요!</title>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire product</title>
     <style>
-      body {
-        background-color: #c0c0c0;
-        margin: 0;
-        font-family: '굴림', 'MS Sans Serif', sans-serif;
-        font-size: 12px;
-      }
-      a {
-        color: #000080;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-size: 14px;
+            width: 1024px;
+            height: 576px;
+            margin: 0 auto;
+            overflow-y: auto;
+        }
+
+        header, nav, main, footer {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-right: 16px;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+
+        nav a:last-child {
+            border-right: none;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .pr-4 {
+            padding-right: 16px;
+        }
+
+        .mb-4 {
+            margin-bottom: 16px;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #808080;
+            padding: 5px;
+        }
+
+        .nav-container {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Verdana', sans-serif;
+            font-size: 14px;
+        }
+        .nav-container a {
+            color: #000080;
+            margin: 0 10px;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #808080;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #ffffff, #d0d0d0);
+        }
+        .nav-container a:hover {
+            background: linear-gradient(to bottom, #d0d0d0, #ffffff);
+            border-color: #000080;
+        }
     </style>
-  </head>
-  <body>
-    <!-- 전체 테이블 시작 -->
-    <table width="800" height="600" border="0" cellspacing="1" cellpadding="0" bgcolor="#808080" align="center">
-      <tr>
-        <td bgcolor="#FFFFFF">
-          <!-- 타이틀바 -->
-          <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#000080">
-            <tr>
-              <td><font color="#FFFFFF">▶ 마이샵 온라인 쇼핑몰</font></td>
-              <td align="right"><font color="#FFFFFF">_ ⬜ ✕</font></td>
-            </tr>
-          </table>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div>
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div>
+                    <h1>Engineering Tire</h1>
+                    <p>Exceeding Customer Expectations Since 1984</p>
+                </div>
+            </div>
+            <div>
+                <p>+44 (0)1777 712 400</p>
+                <select>
+                    <option>Select Country</option>
+					<option>United States</option>
+					<option>United Kingdom</option>
+					<option>Germany</option>
+					<option>France</option>
+					<option>Spain</option>
+					<option>Italy</option>
+					<option>Portugal</option>
+					<option>Sweden</option>
+                </select>
+            </div>
+        </div>
+    </header>
 
-          <!-- 메뉴바 -->
-          <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
-            <tr>
-              <td><u>파</u>일 | <u>편</u>집 | <u>보</u>기 | <u>도</u>움말</td>
-            </tr>
-          </table>
+    <nav class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="onecolumn.html">Products</a>
+        <a href="twocolumn1.html">Markets</a>
+        <a href="twocolumn2.html">Resources</a>
+        <a href="threecolumn.html">News & Events</a>
+        <a href="threecolumn.html">Case Studies</a>
+        <a href="threecolumn.html">About Us</a>
+        <a href="threecolumn.html">Contact Us</a>
+    </nav>
 
-          <!-- 메인 컨텐츠 -->
-          <table width="100%" border="0" cellspacing="0" cellpadding="1">
-            <tr>
-              <!-- 좌측 메뉴 -->
-              <td width="150" valign="top" bgcolor="#D4D0C8">
-                <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF">
-                  <tr bgcolor="#D4D0C8">
-                    <td><b>⚫ 카테고리</b></td>
+    <main>
+        <div class="flex">
+            <div class="pr-4">
+                <div style="width: 100%; padding: 16px; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/longad0.jpg" alt="Main Image" class="mb-4" style="width: 100%;">
+                </div>
+                <h2 id="headline"class="text-2xl font-bold mb-2" style="text-align: left;">★ Super sale 90% sale ★</h2>
+                <a href="https://www.costco.co.kr/tiresearch" style="color: blue; text-decoration: underline;">Test Capability for Industry Brochure - download here</a>
+                <table width="100%" border="2" cellspacing="1" cellpadding="40" bgcolor="#FFFFFF" style="margin-top: 50px; border-style: inset">
+                  <tr bgcolor="#4a5568" style="color: white;">
+                    <td><b>board</b></td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
-                    <td>► 여성의류</td>
-                  </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td>► 남성의류</td>
-                  </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td>► 신발/가방</td>
-                  </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td>► 주방용품</td>
+                    <td>
+                      <table width="100%" border="1" cellspacing="10" cellpadding="40" bgcolor="#FFFFFF">
+                        <tr bgcolor="#f0f0f0">
+                          <th style="width: 20%;">Title</th>
+                          <th style="width: 70%;">Link</th>
+                        </tr>
+                        <tr>
+                          <td>Industry Info</td>
+                          <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></td>
+                        </tr>
+                        <tr>
+                          <td>Product Details</td>
+                          <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></td>
+                        </tr>
+                        <tr>
+                          <td>Service Updates</td>
+                          <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></td>
+                        </tr>
+                        <tr>
+                          <td>News</td>
+                          <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">est porta rhoncus. Mauris sodales saed pharetr</a></td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                 </table>
-
-                <table
-                  width="100%"
-                  border="2"
-                  cellspacing="1"
-                  cellpadding="3"
-                  bgcolor="#FFFFFF"
-                  style="margin-top: 10px; border-style: inset"
-                >
-                  <tr bgcolor="#D4D0C8">
-                    <td><b>♨ 고객센터</b></td>
+            </div>
+            <div>
+                <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                  <tr bgcolor="#4a5568" style="color: white;">
+                    <td colspan="2"><b>로그인</b></td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
-                    <td>☎ 1234-5678</td>
+                    <td> 이름:</td>
+                    <td><input type="text" name="username" style="width: 100%;" /></td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
-                    <td>평일 09:00~18:00</td>
+                    <td>비밀번호:</td>
+                    <td><input type="password" name="password" style="width: 100%;" /></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td colspan="2" align="center"><button type="button">로그인</button></td>
                   </tr>
                 </table>
-              </td>
+                <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                <tr bgcolor="#4a5568" style="color: white;">
+                    <td colspan="2"><b>뉴스레터 구독</b></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>이름:</td>
+                    <td><input type="text" name="name" style="width: 100%;" /></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>이메일:</td>
+                    <td><input type="email" name="email" style="width: 100%;" /></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td colspan="2" align="center"><button type="button">구독하기</button></td>
+                  </tr>
+                </table>
+                
+                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                  <tr bgcolor="#4a5568" style="color: white;">
+                    <td><b>Gopro</b></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>
+                      <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                          <td colspan="2"><b>Neon</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td style="width: 100%;"><br />1GB for just<br /><br><br /><b>$4.95</b>/Month.<br><br /></td>
+                        </tr>
+                      </table>
+                      <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                          <td colspan="2"><b>Argon</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td style="width: 100%;"><br />10GB for just<br /><br><br /><b>$10.75</b>/Month.<br><br /></td>
+                        </tr>
+                      </table>
+                      <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                          <td colspan="2"><b>Xenon</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                          <td style="width: 100%;"><br />30GB for just<br /><br><br /><b>$25.95</b>/Month.<br><br /></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>  
 
-              <!-- 메인 상품 영역 -->
-              <td valign="top" bgcolor="#FFFFFF" style="padding: 10px">
-                <table width="100%" border="2" style="border-style: outset">
+            </div>
+        </div>
+        <table width="100%" border="0" cellspacing="10" cellpadding="0">
+            <tr align="center">
+              <td width="33%">
+                <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
                   <tr>
-                    <td align="center" bgcolor="#000080">
-                      <marquee scrollamount="3">
-                        <font color="#FFFFFF"><b>★ 봄맞이 신상품 할인 이벤트! 전품목 20% 할인 ★</b></font>
-                      </marquee>
+                    <td align="center">
+                      <img src="images/new11.jpg" width="200" height="120" alt="silicone sheeting" />
+                      <br />silicone sheeting<br />
+                      <font color="#FF0000"><b>7.99$</b></font>
                     </td>
                   </tr>
                 </table>
-
-                <table width="100%" border="0" cellspacing="10" cellpadding="0">
-                  <tr align="center">
-                    <td width="33%">
-                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
-                        <tr>
-                          <td align="center">
-                            <img src="/api/placeholder/120/120" width="120" height="120" alt="봄신상 원피스" />
-                            <br />봄신상 원피스<br />
-                            <font color="#FF0000"><b>39,000원</b></font>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="33%">
-                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
-                        <tr>
-                          <td align="center">
-                            <img src="/api/placeholder/120/120" width="120" height="120" alt="캐주얼 셔츠" />
-                            <br />캐주얼 셔츠<br />
-                            <font color="#FF0000"><b>29,000원</b></font>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="33%">
-                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
-                        <tr>
-                          <td align="center">
-                            <img src="/api/placeholder/120/120" width="120" height="120" alt="청바지" />
-                            <br />청바지<br />
-                            <font color="#FF0000"><b>45,000원</b></font>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-
-                <!-- 하단 배너 -->
-                <table width="100%" border="2" style="border-style: inset; margin-top: 10px">
+              </td>
+              <td width="33%">
+                <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
                   <tr>
-                    <td bgcolor="#D4D0C8" align="center">
-                      <img src="/api/placeholder/500/60" width="500" height="60" alt="하단 배너" />
+                    <td align="center">
+                      <img src="images/new22.jpg" width="200" height="120" alt="Definitive Rubber" />
+                      <br />Definitive Rubber<br />
+                      <font color="#FF0000"><b>10.99$</b></font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="33%">
+                <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
+                  <tr>
+                    <td align="center">
+                      <img src="images/news33.jpg" width="200" height="120" alt="Industrial Rubber" />
+                      <br />Industrial Rubber<br />
+                      <font color="#FF0000"><b>4.99$</b></font>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
           </table>
+    </main>
 
-          <!-- 푸터 -->
-          <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D4D0C8">
-            <tr>
-              <td align="center">
-                회사소개 | 이용약관 | 개인정보보호정책 | 제휴문의<br />
-                상호: (주)마이샵 | 대표: 홍길동 | 사업자등록번호: 123-45-67890<br />
-                Copyright ⓒ 1998 MYSHOP Inc. All Rights Reserved.
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
+    <footer style="background-color: #4a5568; color: white; padding: 16px;">
+        <div class="container" style="text-align: center;">
+            <p>Contact us | Find us | JFlex Rubber Products</p>
+            <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginButton = document.querySelector('#loginButton');
+            const idInput = document.querySelector('input[placeholder="ID"]');
+            const pwInput = document.querySelector('input[placeholder="Password"]');
+            const loginContainer = document.querySelector('.login-container');
+
+            if (loginButton && idInput && pwInput && loginContainer) {
+                loginButton.addEventListener('click', function() {
+                    const id = idInput.value;
+                    const pw = pwInput.value;
+                    if (id === 'user' && pw === '1234') {
+                        alert('인증되셨습니다');
+                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
+<div style="background-color: blue; color: white; padding: 8px; border-radius: 4px; display: inline-block;">
+    <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
+</div>`;
+                    } else {
+                        alert('아이디 또는 비밀번호가 틀렸습니다');
+                    }
+                });
+            }
+        });
+
+		document.addEventListener('DOMContentLoaded', function() {
+   			const subscribeButton = document.querySelector('#subscribeButton');
+ 			const nameInput = document.querySelector('input[placeholder="Name"]');
+   			const emailInput = document.querySelector('input[placeholder="Email"]');
+
+    		if (subscribeButton && nameInput && emailInput) {
+      			  subscribeButton.addEventListener('click', function() {
+           		 const name = nameInput.value;
+          		  const email = emailInput.value;
+           		 if (name && email) {
+                const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
+                if (confirmation) {
+                    alert('감사합니다');
+                }
+            } else {
+                alert('이름과 이메일을 입력해 주시겠습니까?');
+            }
+        });
+    }
+});
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'images/longad0.jpg',
+                'images/longad2.jpg', // Replace with actual image paths
+                'images/longad3.jpg'
+            ];
+            let currentIndex = 0;
+            const mainImage = document.querySelector('img[alt="Main Image"]');
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                mainImage.src = images[currentIndex];
+            }, 3000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    const modal = document.createElement('div');
+    const modalImg = document.createElement('img');
+    const closeBtn = document.createElement('span');
+
+    modal.style.display = 'none';
+    modal.style.position = 'fixed';
+    modal.style.zIndex = '1000';
+    modal.style.left = '0';
+    modal.style.top = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.overflow = 'auto';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+
+    modalImg.style.maxWidth = '90%';
+    modalImg.style.maxHeight = '90%';
+
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '10px';
+    closeBtn.style.right = '25px';
+    closeBtn.style.color = '#fff';
+    closeBtn.style.fontSize = '35px';
+    closeBtn.style.fontWeight = 'bold';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.innerHTML = '&times;';
+
+    modal.appendChild(modalImg);
+    modal.appendChild(closeBtn);
+    document.body.appendChild(modal);
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textElement = document.querySelector('#headline');
+            const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
+            let colorIndex = 0;
+
+            setInterval(() => {
+                textElement.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 500);
+        });
+    </script>
+</body>
 </html>
