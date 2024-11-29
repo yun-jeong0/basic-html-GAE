@@ -1,364 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JFlex Engineering Rubber Products</title>
+<html lang="ko">
+  <head>
+    <title>마이샵 온라인 - 최고의 쇼핑을 즐기세요!</title>
+    <meta charset="UTF-8" />
     <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: white;
-            color: #333;
-            width: 1024px;
-            height: 576px;
-            margin: 0 auto;
-            overflow-y: auto;
-        }
-
-        header, nav, main, footer {
-            width: 100%;
-        }
-
-        .container {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-        }
-
-        .flex {
-            display: flex;
-            flex-direction: row;
-        }
-
-        img {
-            margin-right: 16px;
-        }
-
-        h1 {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 0.875rem;
-        }
-
-        nav {
-            background-image: linear-gradient(to right, #333, #555);
-            color: white;
-            padding: 10px 0;
-        }
-
-        nav a {
-            padding: 12px 20px;
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-right: 1px solid #777;
-        }
-
-        nav a:last-child {
-            border-right: none;
-        }
-
-        nav a:hover {
-            background-color: #666;
-        }
-
-        .pr-4 {
-            padding-right: 16px;
-        }
-
-        .mb-4 {
-            margin-bottom: 16px;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .font-bold {
-            font-weight: bold;
-        }
+      body {
+        background-color: #c0c0c0;
+        margin: 0;
+        font-family: '굴림', 'MS Sans Serif', sans-serif;
+        font-size: 12px;
+      }
+      a {
+        color: #000080;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="flex">
-                <div>
-                    <img src="images/logo.png" alt="Logo">
-                </div>
-                <div>
-                    <h1>Engineering Tire</h1>
-                    <p>Exceeding Customer Expectations Since 1984</p>
-                </div>
-            </div>
-            <div>
-                <p>+44 (0)1777 712 400</p>
-                <select>
-                    <option>Select Country</option>
-					<option>United States</option>
-					<option>United Kingdom</option>
-					<option>Germany</option>
-					<option>France</option>
-					<option>Spain</option>
-					<option>Italy</option>
-					<option>Portugal</option>
-					<option>Sweden</option>
-                </select>
-            </div>
-        </div>
-    </header>
+  </head>
+  <body>
+    <!-- 전체 테이블 시작 -->
+    <table width="800" height="600" border="0" cellspacing="1" cellpadding="0" bgcolor="#808080" align="center">
+      <tr>
+        <td bgcolor="#FFFFFF">
+          <!-- 타이틀바 -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#000080">
+            <tr>
+              <td><font color="#FFFFFF">▶ 마이샵 온라인 쇼핑몰</font></td>
+              <td align="right"><font color="#FFFFFF">_ ⬜ ✕</font></td>
+            </tr>
+          </table>
 
-    <nav>
-        <div class="container">
-            <a href="index.html">Home</a>
-            <a href="onecolumn.html">Products</a>
-            <a href="twocolumn1.html">Markets</a>
-            <a href="twocolumn2.html">Resources</a>
-            <a href="threecolumn.html">News & Events</a>
-            <a href="threecolumn.html">Case Studies</a>
-            <a href="threecolumn.html">About Us</a>
-            <a href="threecolumn.html">Contact Us</a>
-        </div>
-    </nav>
+          <!-- 메뉴바 -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+            <tr>
+              <td><u>파</u>일 | <u>편</u>집 | <u>보</u>기 | <u>도</u>움말</td>
+            </tr>
+          </table>
 
-    <main>
-        <div class="flex">
-            <div class="pr-4">
-                <div class="flex">
-                    <div style="width: 60%; padding: 16px; display: flex; align-items: center; justify-content: center;">
-                        <img src="images/longad0.jpg" alt="Main Image" class="mb-4" style="width: 100%;">
-                    </div>
-                    <div style="width: 40%; padding: 16px;">
-                        <h2 class="text-2xl font-bold mb-2" style="text-align: left;">7 cures for you case of the mondays</h2>
-                        <p style="text-align: left;">you can set the tone for the week if you power through the morning grogginess & resist the urge to hit snoosze </p>
-                        <p style="text-align: left;">you dont have to be an optimist to be happy </p>
-                        <p style="text-align: left;">older adults think better in the morning </p>
-                    </div>
-                </div>
+          <!-- 메인 컨텐츠 -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="1">
+            <tr>
+              <!-- 좌측 메뉴 -->
+              <td width="150" valign="top" bgcolor="#D4D0C8">
+                <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF">
+                  <tr bgcolor="#D4D0C8">
+                    <td><b>⚫ 카테고리</b></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>► 여성의류</td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>► 남성의류</td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>► 신발/가방</td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>► 주방용품</td>
+                  </tr>
+                </table>
 
-                <h2 id="headline"class="text-2xl font-bold mb-2" style="text-align: left;">Silicone sheets, rubber mouldings and much more</h2>
-                <hr style="border: none; border-top: 2px solid rgba(66, 66, 80, 0.834); margin-bottom: 16px;">
-                <p style="text-align: left;">Whether you are looking for silicone sheets, rubber mouldings, gaskets, extrusions, bellows, fabrications, rubber sheeting or adhesives including 'Vulcasil' sheets and sealants - J-Flex can help.</p>
-                <h3 class="text-xl font-bold" style="margin-bottom: 8px;">Why buy from J-Flex?</h3>
-                <hr style="border: none; border-top: 2px solid rgba(66, 66, 80, 0.834); margin-bottom: 16px;">
-                <p>J-Flex is renowned as the leading and helpful industrial rubber products supplier with good product knowledge and excellent customer service. We supply world-class quality items including rubber sheet and a wide array of fabrications made from premium grade materials and manufactured to strict tolerances that others can not or will not supply.</p>
-                <p>Having been in the rubber industry for over 30 years, we have plenty of experience too. Our components & materials are used for food, lifestyle, filtration, and more.</p>
-                <a href="https://www.costco.co.kr/tiresearch" style="color: blue; text-decoration: underline;">Test Capability for Industry Brochure - download here</a>
-                <div style="margin-top: 16px; padding: 16px; border-radius: 8px; border: 1px solid white; background-color: #e2e8f0;">
-                    <h3 style="color: black;">Bulletin Board</h3>
-                    <hr style="border: none; border-top: 2px solid rgba(66, 66, 80, 0.834); margin-bottom: 16px;">
-                    <ul id="bulletinBoard" style="list-style-type: none; padding: 0;">
-                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></li>
-                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></li>
-                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></li>
-                        <li style="padding: 8px; margin-bottom: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">est porta rhoncus. Mauris sodales saed pharetr</a></li>
-                        <li style="padding: 8px; background-color: white; border-radius: 4px; border: 1px solid #ddd;"><a href="#" style="text-decoration: none; color: inherit;">Silicone sheets, rubber mouldings and much more</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div class="login-container" style="background-color: #e2e8f0; padding: 16px; ">
-                    <h4 style="font-weight: bold; margin-bottom: 8px;">LOGIN</h4>
-                    <input type="id" placeholder="ID" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
-                    <input type="pw" placeholder="Password" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
-                    <button id="loginButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">login</button>
-                </div>
-                <div style="background-color: #e2e8f0; padding: 16px;">
-                    <h4 style="font-weight: bold; margin-bottom: 8px;">Subscribe to Newsletter</h4>
-                    <input type="text" placeholder="Name" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
-                    <input type="email" placeholder="Email" style="width: calc(100% - 16px); margin-bottom: 8px; padding: 8px; border: 1px solid #ccc;">
-                    <button id="subscribeButton" style="width: 100%; background-color: blue; color: white; padding: 8px;">Subscribe</button>
-                </div>
-                
-                <div class="go-pro-container" style="background-color: #e2e8f0; padding: 16px; margin-top: 16px; border-radius: 8px;">
-                    <h4 style="font-weight: bold; margin-bottom: 15px;">Gopro</h4>
-                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
-                            <h4 style="color: #ff1493; margin-top: 2px;">Neon</h4>
-                            <p>1GB for just $4.95/Month.</p>
-                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
-                        </div>
-                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
-                            <h4 style="color: #ff8c00;margin-top: 2px;">Argon</h4>
-                            <p>10GB for just $10.75/Month.</p>
-                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
-                        </div>
-                        <div style="border: 1px dashed black; padding: 2px; margin-bottom: 10px; background-color: white;">
-                            <h4 style="color: #32cd32;margin-top: 3px;">Xenon</h4>
-                            <p>30GB for just $25.95/Month.</p>
-                            <a href="#" style="color: blue; text-decoration: underline;">Learn More</a>
-                        </div>
+                <table
+                  width="100%"
+                  border="2"
+                  cellspacing="1"
+                  cellpadding="3"
+                  bgcolor="#FFFFFF"
+                  style="margin-top: 10px; border-style: inset"
+                >
+                  <tr bgcolor="#D4D0C8">
+                    <td><b>♨ 고객센터</b></td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>☎ 1234-5678</td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+                    <td>평일 09:00~18:00</td>
+                  </tr>
+                </table>
+              </td>
 
-                </div>  
+              <!-- 메인 상품 영역 -->
+              <td valign="top" bgcolor="#FFFFFF" style="padding: 10px">
+                <table width="100%" border="2" style="border-style: outset">
+                  <tr>
+                    <td align="center" bgcolor="#000080">
+                      <marquee scrollamount="3">
+                        <font color="#FFFFFF"><b>★ 봄맞이 신상품 할인 이벤트! 전품목 20% 할인 ★</b></font>
+                      </marquee>
+                    </td>
+                  </tr>
+                </table>
 
-            </div>
-        </div>
-        <div class="flex" style="margin-top: 32px;">
-            <div style="width: 33.33%; padding: 16px;">
-                <img src="images/new11.jpg" alt="V-SIL" style="margin-bottom: 8px;">
-                <p>Value for money silicone sheeting</p>
-				<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
-					Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet
-					mollis justo facilisis quis. Sed sagittis mauris amet tellus gravida
-					lorem ipsum dolor sit amet consequat blandit lorem ipsum dolor
-					sit amet consequat sed dolore</p>
-            </div>
-            <div style="width: 33.33%; padding: 16px;">
-                <img src="images/new22.jpg" alt="Silicone Rubber" style="margin-bottom: 8px;">
-                <p>The Definitive Rubber</p>
-				<p>Aenean non massa sapien. In hac habitasse platea dictumst.
-					Maecenas sodales purus et nulla sodales aliquam. Aenean ac
-					porttitor metus. In hac habitasse platea dictumst. Phasellus
-					blandit turpis in leo scelerisque mollis. Nulla venenatis
-					ipsum nec est porta rhoncus. Mauris sodales saed pharetr</p>
-            </div>
-            <div style="width: 33.33%; padding: 16px;">
-                <img src="images/news33.jpg" alt="SpeedyFlex" style="margin-bottom: 8px;">
-                <p>SpeedyFlex The Right Industrial Rubber</p>
-				<p>nisi nec consectetur. Cras elit magna, hendrerit nec
-					consectetur in, sollicitudin vitae justo. Cras amet aliquet
-					Aliquam ligula turpis, feugiat id fermentum malesuada,
-					rutrum eget turpis. Mauris sodales sed pharetra nisi nec
-					consectetur. Cras elit magna, hendrerit nec consectetur
-					in sollicitudin vitae.</p>
-            </div>
-  
-    </main>
+                <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                  <tr align="center">
+                    <td width="33%">
+                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
+                        <tr>
+                          <td align="center">
+                            <img src="/api/placeholder/120/120" width="120" height="120" alt="봄신상 원피스" />
+                            <br />봄신상 원피스<br />
+                            <font color="#FF0000"><b>39,000원</b></font>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="33%">
+                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
+                        <tr>
+                          <td align="center">
+                            <img src="/api/placeholder/120/120" width="120" height="120" alt="캐주얼 셔츠" />
+                            <br />캐주얼 셔츠<br />
+                            <font color="#FF0000"><b>29,000원</b></font>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="33%">
+                      <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset">
+                        <tr>
+                          <td align="center">
+                            <img src="/api/placeholder/120/120" width="120" height="120" alt="청바지" />
+                            <br />청바지<br />
+                            <font color="#FF0000"><b>45,000원</b></font>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
 
-    <footer style="background-color: #4a5568; color: white; padding: 16px;">
-        <div class="container" style="text-align: center;">
-            <p>Contact us | Find us | JFlex Rubber Products</p>
-            <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
-        </div>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const loginButton = document.querySelector('#loginButton');
-            const idInput = document.querySelector('input[placeholder="ID"]');
-            const pwInput = document.querySelector('input[placeholder="Password"]');
-            const loginContainer = document.querySelector('.login-container');
+                <!-- 하단 배너 -->
+                <table width="100%" border="2" style="border-style: inset; margin-top: 10px">
+                  <tr>
+                    <td bgcolor="#D4D0C8" align="center">
+                      <img src="/api/placeholder/500/60" width="500" height="60" alt="하단 배너" />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
 
-            if (loginButton && idInput && pwInput && loginContainer) {
-                loginButton.addEventListener('click', function() {
-                    const id = idInput.value;
-                    const pw = pwInput.value;
-                    if (id === 'user' && pw === '1234') {
-                        alert('인증되셨습니다');
-                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
-<div style="background-color: blue; color: white; padding: 8px; border-radius: 4px; display: inline-block;">
-    <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
-</div>`;
-                    } else {
-                        alert('아이디 또는 비밀번호가 틀렸습니다');
-                    }
-                });
-            }
-        });
-
-		document.addEventListener('DOMContentLoaded', function() {
-   			const subscribeButton = document.querySelector('#subscribeButton');
- 			const nameInput = document.querySelector('input[placeholder="Name"]');
-   			const emailInput = document.querySelector('input[placeholder="Email"]');
-
-    		if (subscribeButton && nameInput && emailInput) {
-      			  subscribeButton.addEventListener('click', function() {
-           		 const name = nameInput.value;
-          		  const email = emailInput.value;
-           		 if (name && email) {
-                const confirmation = confirm(`${name}님 ${email}로 정보를 받으시겠습니까?`);
-                if (confirmation) {
-                    alert('감사합니다');
-                }
-            } else {
-                alert('이름과 이메일을 입력해 주시겠습니까?');
-            }
-        });
-    }
-});
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = [
-                'images/longad0.jpg',
-                'images/longad2.jpg', // Replace with actual image paths
-                'images/longad3.jpg'
-            ];
-            let currentIndex = 0;
-            const mainImage = document.querySelector('img[alt="Main Image"]');
-
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % images.length;
-                mainImage.src = images[currentIndex];
-            }, 3000);
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
-    const modal = document.createElement('div');
-    const modalImg = document.createElement('img');
-    const closeBtn = document.createElement('span');
-
-    modal.style.display = 'none';
-    modal.style.position = 'fixed';
-    modal.style.zIndex = '1000';
-    modal.style.left = '0';
-    modal.style.top = '0';
-    modal.style.width = '100%';
-    modal.style.height = '100%';
-    modal.style.overflow = 'auto';
-    modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
-    modal.style.justifyContent = 'center';
-    modal.style.alignItems = 'center';
-
-    modalImg.style.maxWidth = '90%';
-    modalImg.style.maxHeight = '90%';
-
-    closeBtn.style.position = 'absolute';
-    closeBtn.style.top = '10px';
-    closeBtn.style.right = '25px';
-    closeBtn.style.color = '#fff';
-    closeBtn.style.fontSize = '35px';
-    closeBtn.style.fontWeight = 'bold';
-    closeBtn.style.cursor = 'pointer';
-    closeBtn.innerHTML = '&times;';
-
-    modal.appendChild(modalImg);
-    modal.appendChild(closeBtn);
-    document.body.appendChild(modal);
-
-    images.forEach(img => {
-        img.addEventListener('click', function() {
-            modal.style.display = 'flex';
-            modalImg.src = this.src;
-        });
-    });
-
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    modal.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-});
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const textElement = document.querySelector('#headline');
-            const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
-            let colorIndex = 0;
-
-            setInterval(() => {
-                textElement.style.color = colors[colorIndex];
-                colorIndex = (colorIndex + 1) % colors.length;
-            }, 500);
-        });
-    </script>
-</body>
+          <!-- 푸터 -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D4D0C8">
+            <tr>
+              <td align="center">
+                회사소개 | 이용약관 | 개인정보보호정책 | 제휴문의<br />
+                상호: (주)마이샵 | 대표: 홍길동 | 사업자등록번호: 123-45-67890<br />
+                Copyright ⓒ 1998 MYSHOP Inc. All Rights Reserved.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
