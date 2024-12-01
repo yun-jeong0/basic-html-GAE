@@ -113,23 +113,27 @@
 </head>
 <body>
     <header style="border: none;">
-        <table class="container" style="border: none;" width="100%">
+        <table class="container" style="border: none; width: 100%; table-layout: fixed;">
             <tr class="flex" style="border: none;">
-                <td style="border: none;">
+                <td style="border: none; width: 100px;">
                     <img src="images/logo.png" alt="Logo">
                 </td>
-                <td style="border: none;">
+                <td style="border: none; width: auto;">
                     <h1>Demo website</h1>
                     <p>Exceeding Customer Expectations Since 1984</p>
                 </td>
-                <td style="border: none; text-align:right; vertical-align: top;">
-                    <table class="container" style="border: none;" width="100%">
+                <td style="border: none; text-align: right; vertical-align: top; width: 600px;">
+                    <table class="container" style="border: none; width: 100%;">
                         <tr>
-                            <td style="border: none; text-align:right; vertical-align: top;">
+                            <!-- just for spacing no reason to excist -->
+                            <td style="width: 150px; border:none;"></td>  
+                            <!-- now use -->
+                            <td style="border: none; text-align: right; vertical-align: top; padding-right: 15px; ">
                                 <p style="margin: 0;">+44 (0)1777 712 400</p>
+                                <p style="margin: 5px 0 0 0; font-size: 0.9em;">Monday to Friday 9am to 5pm</p>
                             </td>
-                            <td style="border: none; text-align:right; vertical-align: top;">
-                                <select style="border: none; margin-top: 5px;">
+                            <td style="border: none; text-align: right; vertical-align: top;">
+                                <select style="border: none; margin-top: 5px; padding: 5px; width: 150px;">
                                     <option>Select Country</option>
                                     <option>United States</option>
                                     <option>United Kingdom</option>
@@ -158,6 +162,7 @@
         <a href="threecolumn.html">About Us</a>
         <a href="threecolumn.html">Contact Us</a>
     </nav>
+
 <div id="main" style="background-color: #f0f0f0;">
 					<div class="container">
 						<div class="row main-row">
