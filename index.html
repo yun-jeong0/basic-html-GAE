@@ -1,220 +1,378 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Industrial Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Demo website</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-size: 14px;
+            width: 1024px;
+            height: 576px;
+            margin: 0 auto;
+            overflow-y: auto;
+        }
+
+        header, nav, main, footer {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-right: 16px;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+
+        nav a:last-child {
+            border-right: none;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .pr-4 {
+            padding-right: 16px;
+        }
+
+        .mb-4 {
+            margin-bottom: 16px;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #808080;
+            padding: 5px;
+        }
+
+        .nav-container {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Verdana', sans-serif;
+            font-size: 14px;
+        }
+        .nav-container a {
+            color: #000080;
+            margin: 0 10px;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #808080;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #ffffff, #d0d0d0);
+        }
+        .nav-container a:hover {
+            background: linear-gradient(to bottom, #d0d0d0, #ffffff);
+            border-color: #000080;
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <img src="images/logo.png" alt="Logo" class="w-40">
-                    <div class="ml-4">
-                        <h1 class="text-xl font-bold">Demo website</h1>
-                        <p class="text-sm">Exceeding Customer Expectations Since 1984</p>
-                    </div>
-                </div>
-                <div class="text-right">
-                    <p class="font-medium">+44 (0)1777 712 400</p>
-                    <p class="text-sm">Monday to Friday 9am to 5pm</p>
-                    <select class="mt-2 bg-white/20 rounded px-3 py-1 w-40">
-                        <option>Select Country</option>
-                        <option>United States</option>
-                        <option>United Kingdom</option>
-                        <option>Germany</option>
-                        <option>France</option>
-                        <option>Spain</option>
-                        <option>Italy</option>
-                        <option>Portugal</option>
-                        <option>Sweden</option>
-                    </select>
-                </div>
-            </div>
-        </div>
+<body>
+    <header style="border: none;">
+        <table class="container" style="border: none; width: 100%; table-layout: fixed;">
+            <tr class="flex" style="border: none;">
+                <td style="border: none; width: 100px;">
+                    <img src="images/logo.png" alt="Logo">
+                </td>
+                <td style="border: none; width: auto;">
+                    <h1>Demo website</h1>
+                    <p>Exceeding Customer Expectations Since 1984</p>
+                </td>
+                <td style="border: none; text-align: right; vertical-align: top; width: 600px;">
+                    <table class="container" style="border: none; width: 100%;">
+                        <tr>
+                            <!-- just for spacing no reason to excist -->
+                            <td style="width: 150px; border:none;"></td>  
+                            <!-- now use -->
+                            <td style="border: none; text-align: right; vertical-align: top; padding-right: 15px; ">
+                                <p style="margin: 0;">+44 (0)1777 712 400</p>
+                                <p style="margin: 5px 0 0 0; font-size: 0.9em;">Monday to Friday 9am to 5pm</p>
+                            </td>
+                            <td style="border: none; text-align: right; vertical-align: top;">
+                                <select style="border: none; margin-top: 5px; padding: 5px; width: 150px;">
+                                    <option>Select Country</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                    <option>Germany</option>
+                                    <option>France</option>
+                                    <option>Spain</option>
+                                    <option>Italy</option>
+                                    <option>Portugal</option>
+                                    <option>Sweden</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </header>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0">
-        <div class="container mx-auto px-4">
-            <ul class="flex space-x-8 py-4">
-                <li><a href="index.html" class="text-gray-700 hover:text-indigo-600">Home</a></li>
-                <li><a href="onecolumn.html" class="text-gray-700 hover:text-indigo-600">Products</a></li>
-                <li><a href="twocolumn1.html" class="text-gray-700 hover:text-indigo-600">Markets</a></li>
-                <li><a href="twocolumn2.html" class="text-gray-700 hover:text-indigo-600">Resources</a></li>
-                <li><a href="threecolumn.html" class="text-gray-700 hover:text-indigo-600">News & Events</a></li>
-                <li><a href="threecolumn.html" class="text-gray-700 hover:text-indigo-600">Case Studies</a></li>
-                <li><a href="threecolumn.html" class="text-gray-700 hover:text-indigo-600">About Us</a></li>
-                <li><a href="threecolumn.html" class="text-gray-700 hover:text-indigo-600">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav><main class="container mx-auto px-4 py-8 flex gap-8">
-        <!-- Main Content -->
-        <div class="flex-grow">
-            <!-- Products Grid -->
-            <div class="grid grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad1.jpg" width="200" height="150" alt="silicone sheeting" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">silicone sheeting</h3>
-                        <p class="text-red-600 font-bold mt-2">7.99$</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad2.jpg" width="200" height="150" alt="Definitive Rubber" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Definitive Rubber</h3>
-                        <p class="text-red-600 font-bold mt-2">10.99$</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad3.jpg" width="200" height="150" alt="Industrial Rubber" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Industrial Rubber</h3>
-                        <p class="text-red-600 font-bold mt-2">4.99$</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad4.jpg" width="200" height="150" alt="Rubber Mats" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Rubber Mats</h3>
-                        <p class="text-red-600 font-bold mt-2">8.99$</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad5.jpg" width="200" height="150" alt="Rubber Seals" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Rubber Seals</h3>
-                        <p class="text-red-600 font-bold mt-2">12.99$</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images/ad6.jpg" width="200" height="150" alt="Rubber Hoses" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-gray-800">Rubber Hoses</h3>
-                        <p class="text-red-600 font-bold mt-2">15.99$</p>
-                    </div>
-                </div>
-            </div><!-- FAQ Section -->
-            <div class="mt-12 bg-white rounded-lg shadow-md p-6">
-                <h2 id="headline" class="text-2xl font-bold text-gray-800 mb-6">★ Super sale 90% sale ★</h2>
-                <a href="https://ko.wix.com/ecommerce/website" class="text-blue-600 hover:underline">Test Capability for Industry Brochure - download here</a>
-                
-                <div class="mt-6">
-                    <h3 class="text-lg font-semibold text-white bg-gray-700 p-3 rounded-t">FAQ</h3>
-                    <div class="p-4 border rounded-b">
-                        <table class="w-full">
-                            <thead>
-                                <tr class="bg-gray-100">
-                                    <th class="p-2 text-left w-1/5">title</th>
-                                    <th class="p-2 text-left w-4/5">content</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b">
-                                    <td class="p-2">Question1</td>
-                                    <td class="p-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE">industry for over 30 years, we have plenty of</a></td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="p-2">Question2</td>
-                                    <td class="p-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">rubber mouldings, gaskets, extrusions</a></td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="p-2">Question3</td>
-                                    <td class="p-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">dapibus sed mattis quis, rutrum accumsan sed</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">Question4</td>
-                                    <td class="p-2"><a href="https://www.renesas.com/en/applications/automotive/vehicle-control">est porta rhoncus. Mauris sodales saed pharetr</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="onecolumn.html">Products</a>
+        <a href="twocolumn1.html">Markets</a>
+        <a href="twocolumn2.html">Resources</a>
+        <a href="threecolumn.html">News & Events</a>
+        <a href="threecolumn.html">Case Studies</a>
+        <a href="threecolumn.html">About Us</a>
+        <a href="threecolumn.html">Contact Us</a>
+    </nav>
 
-        <!-- Sidebar -->
-        <div class="w-80 space-y-6">
-            <!-- Login Section -->
-            <div class="bg-white rounded-lg shadow-md p-6 login-container">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">LOGIN</h2>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <label class="w-24">ID:</label>
-                        <input type="text" placeholder="ID" class="flex-1 px-3 py-2 border rounded"/>
-                    </div>
-                    <div class="flex items-center">
-                        <label class="w-24">Password:</label>
-                        <input type="password" placeholder="Password" class="flex-1 px-3 py-2 border rounded"/>
-                    </div>
-                    <button id="loginButton" class="w-full bg-gray-700 text-white py-2 rounded hover:bg-gray-600">LOGIN</button>
-                </div>
-            </div>
-
-            <!-- Newsletter Section -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">newletter sub</h2>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <label class="w-24">name:</label>
-                        <input type="text" placeholder="Name" class="flex-1 px-3 py-2 border rounded"/>
-                    </div>
-                    <div class="flex items-center">
-                        <label class="w-24">email:</label>
-                        <input type="email" placeholder="Email" class="flex-1 px-3 py-2 border rounded"/>
-                    </div>
-                    <button id="subscribeButton" class="w-full bg-gray-700 text-white py-2 rounded hover:bg-gray-600">subscribe</button>
-                </div>
-            </div><!-- Pricing Plans -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">Gopro</h2>
-                <div class="space-y-4">
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <h3 class="text-lg font-semibold text-white bg-gray-700 p-2">Neon</h3>
-                        <div class="text-center py-4">
-                            <p>1GB for just</p>
-                            <p class="text-xl font-bold">$4.95</p>
-                            <p>Month.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <h3 class="text-lg font-semibold text-white bg-gray-700 p-2">Argon</h3>
-                        <div class="text-center py-4">
-                            <p>10GB for just</p>
-                            <p class="text-xl font-bold">$10.75</p>
-                            <p>Month.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-4">
-                        <h3 class="text-lg font-semibold text-white bg-gray-700 p-2">Xenon</h3>
-                        <div class="text-center py-4">
-                            <p>30GB for just</p>
-                            <p class="text-xl font-bold">$25.95</p>
-                            <p>Month.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main>
+        <table class="flex" width="100%" style="border: none;">
+            <tr>
+                <td class="pr-4" style="border: none;">
+                    <table width="100%" style="border: none; padding: 16px;">
+                        <tr>
+                            <td style="border: none;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr align="center">
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad1.jpg" width="200" height="150" alt="silicone sheeting" style="margin: 0 auto;" />
+                                                        <br />silicone sheeting<br />
+                                                        <font color="#FF0000"><b>7.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="10" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad2.jpg" width="200" height="150" alt="Definitive Rubber" style="margin: 0 auto;" />
+                                                        <br />Definitive Rubber<br />
+                                                        <font color="#FF0000"><b>10.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad3.jpg" width="200" height="150" alt="Industrial Rubber" style="margin: 0 auto;" />
+                                                        <br />Industrial Rubber<br />
+                                                        <font color="#FF0000"><b>4.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad4.jpg" width="200" height="150" alt="Rubber Mats" style="margin: 0 auto;" />
+                                                        <br />Rubber Mats<br />
+                                                        <font color="#FF0000"><b>8.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad5.jpg" width="200" height="150" alt="Rubber Seals" style="margin: 0 auto;" />
+                                                        <br />Rubber Seals<br />
+                                                        <font color="#FF0000"><b>12.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="33%" style="border: none; padding: 10px;">
+                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
+                                                <tr>
+                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="images/ad6.jpg" width="200" height="150" alt="Rubber Hoses" style="margin: 0 auto;" />
+                                                        <br />Rubber Hoses<br />
+                                                        <font color="#FF0000"><b>15.99$</b></font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">
+                                <h2 id="headline" class="text-2xl font-bold mb-2" style="text-align: left;">★ Super sale 90% sale ★</h2>
+                                <a href="https://ko.wix.com/ecommerce/website" style="color: blue; text-decoration: underline;">Test Capability for Industry Brochure - download here</a>
+                                <table width="100%" border="2" cellspacing="1" cellpadding="40" bgcolor="#FFFFFF" style="margin-top: 20px; border-style: inset">
+                                    <tr bgcolor="#4a5568" style="color: white;">
+                                        <td><b>FAQ</b></td>
+                                    </tr>
+                                    <tr bgcolor="#FFFFFF">
+                                        <td>
+                                            <table width="100%" border="1" cellspacing="10" cellpadding="40" bgcolor="#FFFFFF">
+                                                <tr bgcolor="#f0f0f0">
+                                                    <th style="width: 20%;">title</th>
+                                                    <th style="width: 70%;">content</th>
+                                                </tr>
+                                                <tr style="margin-top: 30px; margin-bottom: 30px;">
+                                                    <td>Question1</td>
+                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></td>
+                                                </tr>
+                                                <tr style="margin-top: 10px; margin-bottom: 10px;">
+                                                    <td>Question2</td>
+                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></td>
+                                                </tr>
+                                                <tr style="margin-top: 10px; margin-bottom: 10px;">
+                                                    <td>Question3 </td>
+                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></td>
+                                                </tr>
+                                                <tr style="margin-top: 10px; margin-bottom: 10px;">
+                                                    <td>Question4</td>
+                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">est porta rhoncus. Mauris sodales saed pharetr</a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="border: none;">
+                    <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset" class="login-container">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                            <td colspan="2"><b>LOGIN</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td>ID:</td>
+                            <td><input type="text" placeholder="ID" style="width: 100%;" /></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td>Password:</td>
+                            <td><input type="password" placeholder="Password" style="width: 100%;" /></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td colspan="2" align="center">
+                                <button id="loginButton" style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer;">LOGIN</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                            <td colspan="2"><b>newletter sub</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td>name:</td>
+                            <td><input type="text" placeholder="Name" style="width: 100%;" /></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td>email:</td>
+                            <td><input type="email" placeholder="Email" style="width: 100%;" /></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td colspan="2" align="center">
+                                <button id="subscribeButton" style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer;">subscribe</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                        <tr bgcolor="#4a5568" style="color: white;">
+                            <td><b>Gopro</b></td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                            <td>
+                                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                                    <tr bgcolor="#4a5568" style="color: white;">
+                                        <td colspan="2"><b>Neon</b></td>
+                                    </tr>
+                                    <tr bgcolor="#FFFFFF">
+                                        <td style="width: 100%;"><br />1GB for just<br /><br><br /><b>$4.95</b>/Month.<br><br /></td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                                    <tr bgcolor="#4a5568" style="color: white;">
+                                        <td colspan="2"><b>Argon</b></td>
+                                    </tr>
+                                    <tr bgcolor="#FFFFFF">
+                                        <td style="width: 100%;"><br />10GB for just<br /><br><br /><b>$10.75</b>/Month.<br><br /></td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
+                                    <tr bgcolor="#4a5568" style="color: white;">
+                                        <td colspan="2"><b>Xenon</b></td>
+                                    </tr>
+                                    <tr bgcolor="#FFFFFF">
+                                        <td style="width: 100%;"><br />30GB for just<br /><br><br /><b>$25.95</b>/Month.<br><br /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="flex" width="100%" style="border: none;">
+            <tr>
+                <td style="display: flex; align-items: center; justify-content: center; border: none;">
+                    <img src="images/longad1.jpg" alt="Main Image" style="width: 1000px; height: 300px;">
+                </td>
+            </tr>
+        </table>
     </main>
 
-    <div class="container mx-auto px-4 py-8">
-        <div class="w-full">
-            <img src="images/longad1.jpg" alt="Main Image" class="w-full h-[300px] object-cover">
-        </div>
-    </div>
-
-    <footer class="bg-gray-700 text-white py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p>Contact us | Find us | JFlex Rubber Products</p>
-            <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
-        </div>
+    <footer style="background-color: #4a5568; color: white; padding: 16px;">
+        <table class="container" style="text-align: center; width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="border: none; text-align: center; width: 100%;">
+                    <p style="margin: 0 auto; width: fit-content;">Contact us | Find us | JFlex Rubber Products</p>
+                    <p style="margin: 0 auto; width: fit-content;">Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
+                </td>
+            </tr>
+        </table>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const loginButton = document.querySelector('#loginButton');
@@ -228,12 +386,9 @@
                     const pw = pwInput.value;
                     if (id === 'user' && pw === '1234') {
                         alert('인증되셨습니다');
-                        loginContainer.innerHTML = `
-                            <div class="p-4">
-                                <p class="text-lg font-semibold mb-2">반갑습니다 ${id}님</p>
-                                <div class="bg-gray-100 p-2 rounded">
-                                    <p class="text-sm">상담건수: 5 | 예약건수: 3</p>
-                                </div>
+                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
+                            <div style="background-color: white; color: black; padding: 8px; border-radius: 4px; display: inline-block;">
+                                <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
                             </div>`;
                     } else {
                         alert('아이디 또는 비밀번호가 틀렸습니다');
@@ -277,7 +432,60 @@
                 mainImage.src = images[currentIndex];
             }, 3000);
         });
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            const modal = document.createElement('div');
+            const modalImg = document.createElement('img');
+            const closeBtn = document.createElement('span');
 
+            modal.style.display = 'none';
+            modal.style.position = 'fixed';
+            modal.style.zIndex = '1000';
+            modal.style.left = '0';
+            modal.style.top = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.overflow = 'auto';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+
+            modalImg.style.maxWidth = '100%';
+            modalImg.style.maxHeight = '100%';
+            modalImg.style.transform = 'scale(2)';
+
+            closeBtn.style.position = 'absolute';
+            closeBtn.style.top = '10px';
+            closeBtn.style.right = '25px';
+            closeBtn.style.color = '#fff';
+            closeBtn.style.fontSize = '35px';
+            closeBtn.style.fontWeight = 'bold';
+            closeBtn.style.cursor = 'pointer';
+            closeBtn.innerHTML = '&times;';
+
+            modal.appendChild(modalImg);
+            modal.appendChild(closeBtn);
+            document.body.appendChild(modal);
+
+            images.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                    modalImg.src = this.src;
+                });
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const textElement = document.querySelector('#headline');
             const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
@@ -287,42 +495,6 @@
                 textElement.style.color = colors[colorIndex];
                 colorIndex = (colorIndex + 1) % colors.length;
             }, 500);
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('img');
-            const modal = document.createElement('div');
-            const modalImg = document.createElement('img');
-            const closeBtn = document.createElement('span');
-
-            modal.className = 'fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center';
-            modalImg.className = 'max-w-full max-h-full transform scale-150';
-            closeBtn.className = 'absolute top-4 right-4 text-white text-4xl font-bold cursor-pointer';
-            closeBtn.innerHTML = '&times;';
-
-            modal.appendChild(modalImg);
-            modal.appendChild(closeBtn);
-            document.body.appendChild(modal);
-
-            images.forEach(img => {
-                img.addEventListener('click', function() {
-                    modal.classList.remove('hidden');
-                    modal.classList.add('flex');
-                    modalImg.src = this.src;
-                });
-            });
-
-            closeBtn.addEventListener('click', function() {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            });
-
-            modal.addEventListener('click', function(event) {
-                if (event.target === modal) {
-                    modal.classList.add('hidden');
-                    modal.classList.remove('flex');
-                }
-            });
         });
     </script>
 </body>
