@@ -2,328 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>데모 웹사이트</title>
+    <script src='https://cdn.tailwindcss.com'></script>
     <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #f0f0f0;
-            margin: 0;
-            font-size: 14px;
-            width: 1024px;
-            height: 576px;
-            margin: 0 auto;
-            overflow-y: auto;
+        @keyframes pulse {
+            0%, 100% { opacity: .5; }
+            50% { opacity: 1; }
         }
-
-        header, nav, main, footer {
-            width: 100%;
-        }
-
-        .container {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-        }
-
-        .flex {
-            display: flex;
-            flex-direction: row;
-        }
-
-        img {
-            margin-right: 16px;
-        }
-
-        h1 {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 0.875rem;
-        }
-
-        nav a:last-child {
-            border-right: none;
-        }
-
-        nav a:hover {
-            background-color: #666;
-        }
-
-        .pr-4 {
-            padding-right: 16px;
-        }
-
-        .mb-4 {
-            margin-bottom: 16px;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .font-bold {
-            font-weight: bold;
-        }
-
-        a {
-            color: #0000ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        td, th {
-            border: 1px solid #808080;
-            padding: 5px;
-        }
-
-        .nav-container {
-            padding: 10px;
-            text-align: center;
-            font-family: 'Verdana', sans-serif;
-            font-size: 14px;
-        }
-        .nav-container a {
-            color: #000080;
-            margin: 0 10px;
-            padding: 5px 10px;
-            text-decoration: none;
-            border: 1px solid #808080;
-            border-radius: 5px;
-            background: linear-gradient(to bottom, #ffffff, #d0d0d0);
-        }
-        .nav-container a:hover {
-            background: linear-gradient(to bottom, #d0d0d0, #ffffff);
-            border-color: #000080;
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
     </style>
 </head>
-<body>
-    <header style="border: none;">
-        <table class="container" style="border: none; width: 100%; table-layout: fixed;">
-            <tr class="flex" style="border: none;">
-                <td style="border: none; width: 100px;">
-                    <img src="images/logo.png" alt="Logo">
-                </td>
-                <td style="border: none; width: auto;">
-                    <h1>Demo website</h1>
-                    <p>Exceeding Customer Expectations Since 1984</p>
-                </td>
-                <td style="border: none; text-align: right; vertical-align: top; width: 600px;">
-                    <table class="container" style="border: none; width: 100%;">
-                        <tr>
-                            <!-- just for spacing no reason to excist -->
-                            <td style="width: 150px; border:none;"></td>  
-                            <!-- now use -->
-                            <td style="border: none; text-align: right; vertical-align: top; padding-right: 15px; ">
-                                <p style="margin: 0;">+44 (0)1777 712 400</p>
-                                <p style="margin: 5px 0 0 0; font-size: 0.9em;">Monday to Friday 9am to 5pm</p>
-                            </td>
-                            <td style="border: none; text-align: right; vertical-align: top;">
-                                <select style="border: none; margin-top: 5px; padding: 5px; width: 150px;">
-                                    <option>Select Country</option>
-                                    <option>United States</option>
-                                    <option>United Kingdom</option>
-                                    <option>Germany</option>
-                                    <option>France</option>
-                                    <option>Spain</option>
-                                    <option>Italy</option>
-                                    <option>Portugal</option>
-                                    <option>Sweden</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </header>
-
-    <nav class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="onecolumn.html">Products</a>
-        <a href="twocolumn1.html">Markets</a>
-        <a href="twocolumn2.html">Resources</a>
-        <a href="threecolumn.html">News & Events</a>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="Logo" class="w-40">
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold">Demo website</h1>
+                        <p class="text-sm opacity-75">Exceeding Customer Expectations Since 1984</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block text-right">
+                    <p class="text-sm">+44 (0)1777 712 400</p>
+                    <p class="text-xs opacity-75">Monday to Friday 9am to 5pm</p>
+                </div>
+                
+                <select class="bg-white/10 rounded px-4 py-2 text-sm">
+                    <option>Select Country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                    <option>Italy</option>
+                    <option>Portugal</option>
+                    <option>Sweden</option>
+                </select>
+            </div>
+        </div>
+    </header><!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="nav-container flex space-x-8 py-4">
+                <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="onecolumn.html" class="hover:text-indigo-600 transition-colors">Products</a>
+                <a href="twocolumn1.html" class="hover:text-indigo-600 transition-colors">Markets</a>
+                <a href="twocolumn2.html" class="hover:text-indigo-600 transition-colors">Resources</a>
+                <a href="threecolumn.html" class="hover:text-indigo-600 transition-colors">News & Events</a>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <table class="flex" width="100%" style="border: none;">
-            <tr>
-                <td class="pr-4" style="border: none;">
-                    <table width="100%" style="border: none; padding: 16px;">
-                        <tr>
-                            <td style="border: none;">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                    <tr align="center">
-                                        <td width="33%" style="border: none; padding: 10px;">
-                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
-                                                <tr>
-                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
-                                                        <img src="images/ad1.jpg" width="200" height="150" alt="silicone sheeting" style="margin: 0 auto;" />
-                                                        <br />silicone sheeting<br />
-                                                        <font color="#FF0000"><b>7.99$</b></font>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td width="33%" style="border: none; padding: 10px;">
-                                            <table width="100%" border="2" cellspacing="0" cellpadding="10" style="border-style: outset; margin: 10px;">
-                                                <tr>
-                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
-                                                        <img src="images/ad2.jpg" width="200" height="150" alt="Definitive Rubber" style="margin: 0 auto;" />
-                                                        <br />Definitive Rubber<br />
-                                                        <font color="#FF0000"><b>10.99$</b></font>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td width="33%" style="border: none; padding: 10px;">
-                                            <table width="100%" border="2" cellspacing="0" cellpadding="3" style="border-style: outset; margin: 10px;">
-                                                <tr>
-                                                    <td align="center" style="display: flex; flex-direction: column; align-items: center;">
-                                                        <img src="images/ad3.jpg" width="200" height="150" alt="Industrial Rubber" style="margin: 0 auto;" />
-                                                        <br />Industrial Rubber<br />
-                                                        <font color="#FF0000"><b>4.99$</b></font>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                   
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border: none;">
-                                <h2 id="headline" class="text-2xl font-bold mb-2" style="text-align: left; margin-bottom: 50px;">★ Super sale 90% sale ★</h2>
-                                <table width="100%" border="2" cellspacing="1" cellpadding="40" bgcolor="#FFFFFF" style="margin-top: 60px; border-style: inset">
-                                    <tr bgcolor="#4a5568" style="color: white;">
-                                        <td><b>FAQ</b></td>
-                                    </tr>
-                                    <tr bgcolor="#FFFFFF">
-                                        <td>
-                                            <table width="100%" border="1" cellspacing="10" cellpadding="40" bgcolor="#FFFFFF">
-                                                <tr bgcolor="#f0f0f0">
-                                                    <th style="width: 20%;">title</th>
-                                                    <th style="width: 70%;">content</th>
-                                                </tr>
-                                                <tr style="margin-top: 30px; margin-bottom: 30px;">
-                                                    <td>Question1</td>
-                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" style="text-decoration: none; color: inherit;">industry for over 30 years, we have plenty of</a></td>
-                                                </tr>
-                                                <tr style="margin-top: 10px; margin-bottom: 10px;">
-                                                    <td>Question2</td>
-                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">rubber mouldings, gaskets, extrusions</a></td>
-                                                </tr>
-                                                <tr style="margin-top: 10px; margin-bottom: 10px;">
-                                                    <td>Question3 </td>
-                                                    <td><a href="https://www.renesas.com/en/applications/automotive/vehicle-control" style="text-decoration: none; color: inherit;">dapibus sed mattis quis, rutrum accumsan sed</a></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="border: none;">
-                    <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset" class="login-container">
-                        <tr bgcolor="#4a5568" style="color: white;">
-                            <td colspan="2"><b>LOGIN</b></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td>ID:</td>
-                            <td><input type="text" placeholder="ID" style="width: 100%;" /></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td>Password:</td>
-                            <td><input type="password" placeholder="Password" style="width: 100%;" /></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td colspan="2" align="center">
-                                <button id="loginButton" style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer;">LOGIN</button>
-                            </td>
-                        </tr>
-                    </table>
-                    <table width="100%" border="2" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
-                        <tr bgcolor="#4a5568" style="color: white;">
-                            <td colspan="2"><b>newletter sub</b></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td>name:</td>
-                            <td><input type="text" placeholder="Name" style="width: 100%;" /></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td>email:</td>
-                            <td><input type="email" placeholder="Email" style="width: 100%;" /></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td colspan="2" align="center">
-                                <button id="subscribeButton" style="background-color: #4a5568; color: white; padding: 5px 20px; border: none; cursor: pointer;">subscribe</button>
-                            </td>
-                        </tr>
-                    </table>
-                    <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
-                        <tr bgcolor="#4a5568" style="color: white;">
-                            <td><b>Gopro</b></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                            <td>
-                                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
-                                    <tr bgcolor="#4a5568" style="color: white;">
-                                        <td colspan="2"><b>Neon</b></td>
-                                    </tr>
-                                    <tr bgcolor="#FFFFFF">
-                                        <td style="width: 100%;"><br />1GB for just<br /><br><br /><b>$4.95</b>/Month.<br><br /></td>
-                                    </tr>
-                                </table>
-                                <table width="100%" border="2" cellspacing="1" cellpadding="10" bgcolor="#FFFFFF" style="margin-top: 10px; border-style: inset">
-                                    <tr bgcolor="#4a5568" style="color: white;">
-                                        <td colspan="2"><b>Argon</b></td>
-                                    </tr>
-                                    <tr bgcolor="#FFFFFF">
-                                        <td style="width: 100%;"><br />10GB for just<br /><br><br /><b>$10.75</b>/Month.<br><br /></td>
-                                    </tr>
-                                </table>
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Products Showcase -->
+                <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/ad1.jpg" alt="silicone sheeting" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">silicone sheeting</h3>
+                            <p class="text-red-600 font-bold">7.99$</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/ad2.jpg" alt="Definitive Rubber" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">Definitive Rubber</h3>
+                            <p class="text-red-600 font-bold">10.99$</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="images/ad3.jpg" alt="Industrial Rubber" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold">Industrial Rubber</h3>
+                            <p class="text-red-600 font-bold">4.99$</p>
+                        </div>
+                    </div>
+                </section>
 
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table class="flex" width="100%" style="border: none;">
-            <tr>
-                <td style="display: flex; align-items: center; justify-content: center; border: none;">
-                    <img src="images/longad1.jpg" alt="Main Image" style="width: 1000px; height: 300px;">
-                </td>
-            </tr>
-        </table>
+                <!-- Sale Banner -->
+                <h2 id="headline" class="text-2xl font-bold text-center py-4">★ Super sale 90% sale ★</h2>
+
+                <!-- FAQ Section -->
+                <section class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-4">FAQ</h2>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-5 gap-4 border-b pb-4">
+                            <div class="col-span-1 font-semibold">Question1</div>
+                            <div class="col-span-4">
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control/tire-pressure-monitoring-system?srsltid=AfmBOor29p4UNBJkInYtGQbBtZS7b-PCHNzgXGSZ5DlAfG3-H-P-6VJE" class="text-gray-600 hover:text-indigo-600">industry for over 30 years, we have plenty of</a>
+                            </div>
+                        </div><div class="grid grid-cols-5 gap-4 border-b pb-4">
+                            <div class="col-span-1 font-semibold">Question2</div>
+                            <div class="col-span-4">
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-gray-600 hover:text-indigo-600">rubber mouldings, gaskets, extrusions</a>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-5 gap-4 border-b pb-4">
+                            <div class="col-span-1 font-semibold">Question3</div>
+                            <div class="col-span-4">
+                                <a href="https://www.renesas.com/en/applications/automotive/vehicle-control" class="text-gray-600 hover:text-indigo-600">dapibus sed mattis quis, rutrum accumsan sed</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="space-y-6">
+                <!-- Login Section -->
+                <div class="bg-white rounded-lg shadow-lg p-6 login-container">
+                    <h2 class="text-xl font-bold mb-4">LOGIN</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm mb-1">ID:</label>
+                            <input type="text" placeholder="ID" class="w-full border rounded px-3 py-2">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">Password:</label>
+                            <input type="password" placeholder="Password" class="w-full border rounded px-3 py-2">
+                        </div>
+                        <button id="loginButton" class="w-full bg-gray-600 text-white rounded py-2 hover:bg-gray-700 transition-colors">
+                            LOGIN
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-4">newletter sub</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm mb-1">name:</label>
+                            <input type="text" placeholder="Name" class="w-full border rounded px-3 py-2">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">email:</label>
+                            <input type="email" placeholder="Email" class="w-full border rounded px-3 py-2">
+                        </div>
+                        <button id="subscribeButton" class="w-full bg-gray-600 text-white rounded py-2 hover:bg-gray-700 transition-colors">
+                            subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pricing Plans -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-4">Gopro</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <h3 class="text-lg font-bold">Neon</h3>
+                            <p class="mt-4">1GB for just</p>
+                            <p class="text-2xl font-bold mt-2">$4.95/Month.</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <h3 class="text-lg font-bold">Argon</h3>
+                            <p class="mt-4">10GB for just</p>
+                            <p class="text-2xl font-bold mt-2">$10.75/Month.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Banner Image -->
+        <div class="mt-8">
+            <img src="images/longad1.jpg" alt="Main Image" class="w-full h-auto max-h-[300px] object-cover">
+        </div>
     </main>
 
-    <footer style="background-color: #4a5568; color: white; padding: 16px;">
-        <table class="container" style="text-align: center; width: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="border: none; text-align: center; width: 100%;">
-                    <p style="margin: 0 auto; width: fit-content;">Contact us | Find us | JFlex Rubber Products</p>
-                    <p style="margin: 0 auto; width: fit-content;">Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
-                </td>
-            </tr>
-        </table>
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Contact us | Find us | JFlex Rubber Products</p>
+            <p>Micrasil | Suba-Flex | Impacta-Flex | V-Sil | V-Silc</p>
+        </div>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const loginButton = document.querySelector('#loginButton');
@@ -337,9 +200,12 @@
                     const pw = pwInput.value;
                     if (id === 'user' && pw === '1234') {
                         alert('인증되셨습니다');
-                        loginContainer.innerHTML = `<p>반갑습니다 ${id}님</p>
-                            <div style="background-color: white; color: black; padding: 8px; border-radius: 4px; display: inline-block;">
-                                <p style="font-size: 0.75rem; margin: 0;">상담건수: 5 | 예약건수: 3</p>
+                        loginContainer.innerHTML = `
+                            <div class="p-6">
+                                <p class="text-lg mb-4">반갑습니다 ${id}님</p>
+                                <div class="bg-gray-100 p-4 rounded">
+                                    <p class="text-sm">상담건수: 5 | 예약건수: 3</p>
+                                </div>
                             </div>`;
                     } else {
                         alert('아이디 또는 비밀번호가 틀렸습니다');
@@ -383,6 +249,7 @@
                 mainImage.src = images[currentIndex];
             }, 3000);
         });
+
         document.addEventListener('DOMContentLoaded', function() {
             const images = document.querySelectorAll('img');
             const modal = document.createElement('div');
@@ -435,8 +302,7 @@
                 }
             });
         });
-    </script>
-    <script>
+
         document.addEventListener('DOMContentLoaded', function() {
             const textElement = document.querySelector('#headline');
             const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
